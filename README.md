@@ -45,9 +45,8 @@ streamlit_math_app/
    ```
 
 4. **Access the Application**
-   ![CleanShot 2024-12-25 at 22.52.04@2x](https://hackmd.io/_uploads/HyfE29KHyl.png)
+   ![終端機 2024-12-25 22 52 10](https://github.com/user-attachments/assets/3ee80076-66d0-4d0d-8d51-e9a766146746)
 
-   
    Open your browser and navigate to:
    ```
    http://0.0.0.0:8501
