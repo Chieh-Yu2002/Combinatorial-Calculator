@@ -44,7 +44,7 @@ with col2:
 
 # Create the main calculation table
 data = {
-    "Formula": [f"P({n}, {r})", f"C({n}, {r})", f"{n}^{r}", f"C({r}+{n}-1, {r})"],
+    "Formula": ["P(n, r)", "C(n, r)", "n^r", "C(r+n-1, r)"],
     "Result": st.session_state.results,
     "Compute": ["Permutation", "Combination", "Arrangement with repetition", "Selection with repetition"],
     "Order relevant": ["yes", "no", "yes", "no"],
@@ -74,17 +74,18 @@ for idx, row in df.iterrows():
     
     cols[0].write(row["Formula"])
     cols[1].write(str(st.session_state.results[idx]))
-    
+
     if cols[2].button(row["Compute"], key=f"btn_{idx}"):
-        if row["Formula"] == "P(n, r)":
+        if row["Compute"] == "Permutation":
             st.session_state.results[idx] = P(n, r)
-        elif row["Formula"] == "C(n, r)":
+        elif row["Compute"] == "Combination":
             st.session_state.results[idx] = C(n, r)
-        elif row["Formula"] == "n^r":
+        elif row["Compute"] == "Arrangement with repetition":
             st.session_state.results[idx] = arrangement_with_rep(n, r)
-        elif row["Formula"] == "C(r+n-1, r)":
+        elif row["Compute"] == "Selection with repetition":
             st.session_state.results[idx] = selection_with_rep(n, r)
         st.rerun()
+
     
     cols[3].write(row["Order relevant"])
     cols[4].write(row["Repetition"])
