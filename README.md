@@ -1,5 +1,4 @@
 # Combinatorial-Calculator
-# Programming Assignment 1
 
 ### Overview
 This project is a Streamlit-based web application that provides various discrete mathematics calculations and visualizations. The app is containerized with Docker for easy setup and execution.
