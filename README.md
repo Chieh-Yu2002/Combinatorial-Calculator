@@ -1,7 +1,9 @@
 # Combinatorial-Calculator
 
 ### Overview
-This project is a Streamlit-based web application that provides various discrete mathematics calculations and visualizations. The app is containerized with Docker for easy setup and execution.
+This project is a Streamlit-based web application that provides various discrete mathematics calculations and visualizations. The app is containerized with Docker for easy setup and execution.The app has been deployed and can be accessed at the following URL:
+
+👉 [Combinatorial Calculator](https://combinatorial-calculator-109261035.streamlit.app/)
 
 ---
 
